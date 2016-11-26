@@ -1,0 +1,15 @@
+name: HabitApp
+models:
+  habit:
+    attributes:
+      name: string
+      streak: integer
+      lastTimestamp: integer
+      history:
+        collection: 'historyRecord'
+        via: 'habit'
+  historyRecord:
+    attributes:
+      timestamp: string
+      habit:
+        model: 'habit'

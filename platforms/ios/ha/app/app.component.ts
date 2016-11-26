@@ -42,7 +42,7 @@ export class AppComponent implements OnInit {
   ];
 
   constructor(private page: Page) {
-
+    
   }
 
   ngOnInit() {
