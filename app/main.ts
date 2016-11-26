@@ -7,6 +7,8 @@ const BrightWork = require('bw-js-sdk');
 const API_KEY = 'a0a775720fca466f8bee98a9e991d479'; // @todo: Get this key out of here, use .env file. 
 const APP_NAME = 'habitapp';
 
+// @todo:  Determine how we can get this working, it is breaking with this error:
+// file:///app/tns_modules/bw-js-sdk/dist/index.js:124:7: JS ERROR ReferenceError: Can't find variable: window"
 BrightWork.initialize(API_KEY, APP_NAME)
   .then(() => {
     // BrightWork is now attached to window.bw
