@@ -1,0 +1,4 @@
+.bw*
+.tmp/
+platforms/
+node_modules/
